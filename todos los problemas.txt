@@ -145,3 +145,14 @@ monto_total_venta <- equipos_venta * precio_venta
 monto_total_comision_venta <- monto_total_venta * precio_venta 
 gano_O_perdio_dinero <- monto_total_venta - monto_total_comision_venta - monto_total_compra  - monto_total_comision_compra 
 
+//se muestra las variables 
+
+display "el monto total de la compra es: " monto_total_compra " $"
+display "el monto total de la comision de la compra es: " monto_total_comision_compra " $"
+display "el monto total de la venta es: " monto_total_venta " $"
+display "el monto total de la comision de la venta es: " monto_total_comision_venta " $"
+display "si el numero es positivo, se gano en la compra"
+display "si el numero es negativo, se perdio en la compra"
+display "la cantidad de dinero que ha quedado es: " gano_O_perdio_dinero " $"
+
+end
