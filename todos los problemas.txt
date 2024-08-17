@@ -1,0 +1,147 @@
+PROBLEMA #1 informacion de un libro.
+
+algoritmo
+
+1.iniciar 
+2.obtener los datos en referencia a la informacion de un libro. (titulo, autor, precio, año de publicacion)
+3.organizar los datos en referencia al informacion de un libro.
+4.mostrar de manera organizada la informacion del libro.
+
+pseudocodigo
+
+program informacion_de_un_libro
+
+start
+//programa para mostrar la informacion de un libro
+
+//se declara las variables a utlizar 
+declare string titulo
+declare string autor
+declare string precio
+declare string publicacion 
+
+//se define el cuerpo de entrada paras las variables definidas anteriormente
+display "informacion de un libro"
+display "ingrese el titulo del libro"
+input titulo
+
+display "ingrese el autor del libro"
+input autor
+
+display "ingrese el precio del libro"
+input precio
+
+display "ingrese el año de publicacion del libro"
+input publicacion 
+
+//se organiza la informacion previamente adquirida para ser mostrada
+
+display "el titulo del libro es: " titulo
+display "el autor del libro es: " autor
+display "el precio del libro es: " precio
+display "el año de publicacion del libro es: " publicacion 
+
+end
+
+
+PROBLEMA #2 calculo de consumo de energia 
+
+algoritmo
+
+1.iniciar
+2.obtener los datos de potencia y de uso diario del electrodomestico. (potencia 1500 vatios, consumo 3 horas al dia)
+3.convertir los datos obtenitos a variables validas a usar, diviendo el numero de vatios entre mill para obtener una cifra en kilovatios
+4.calcular el consumo de energia en kilovatios-hora (kWh) al mes multiplicando los kilovatios por el numero de horas de consumo por 30 dias que tiene el mes
+5.mostrar el consumo de energia en kilovatios-hora (kWh) al mes del electrodomestico
+
+pseudocodigo
+program calculo_de_consumo_de_energia
+start
+
+//programa para calcular el consumo de energia de un electrodomestico 
+
+//se declara las variables a utilizar
+
+declare float vatios
+declare float kilovatios
+declare float horas
+declare float consumo
+
+//se define el cuerpo de entrada paras las variables definidas anteriormente
+display "programa para el calculo de consumo de energia de un electrodomestico"
+
+//se define las variables 
+
+vatios <- 1500
+horas <- 3
+
+//se hace la convercion de vatios a kilovatios
+
+kilovatios <- vatios/1000
+
+//se calcula el consumo kilovatios-hora en todo el mes (mes = 30 dias)
+
+consumo <- kilovatios*horas*30
+
+//se organiza la informacion sobre el consumo para ser mostrada 
+
+display "el consumo de energia en kilovatios-hora (kWh) al mes es: " consumo " kWh"
+
+end
+
+PROBLEMA #3 programa de compra y venta de equipo de electronicos 
+
+algoritmo 
+
+1.iniciar
+2.obtener los datos de compra del equipo electronico (numero de equipos, precio de cada equipo, comision del 3% sobre el monto de la compra)
+3.obtener los datos de venta del equipo electronico (numero de equipos, precio de venta de cada equipo, comision del 3% sobre el monto de la venta)
+4.calcular el monto total pagado por la compra de los equipos multiplicando el numero de equipos por el precio de cada equipo
+5.calcular el monto de la comision pagada por la compra de los equipos multiplicando el monto total pagado por la comision de la compra
+6.calcular el monto total recibido por la venta de los equipos multiplicando el numero de equipos por el precio de cada equipo
+7.calcular el monto de la comision pagada al provedor de la venta de los equipos multiplicando la comision por monto total recibido por la venta de los equipos
+8.calcular si se gano dinero o se perdio sumando el monto total de la venta menos impuesto del provedor menos el monto total de la compra menos el impuesto de la compra
+9.mostrar de manera organizada los datos previamente calculados
+10.finalizar 
+
+
+pseudocodigo
+program compra_y_venta_de_equipo_electronicos
+
+//programa para cacular la rentabilidad de la compra y venta de equipos electronicos
+
+//se definen variables 
+
+declare float equipos_compra 
+declare float precio_compra 
+declare float comision_compra
+declare float equipos_venta 
+declare float precio_venta 
+declare float comision_venta
+declare float monto_total_compra
+declare float monto_total_comision_compra
+declare float monto_total_venta
+declare float monto_total_comision_venta
+declare float gano_O_perdio_dinero
+
+//se define el cuerpo de entrada del programa 
+
+display "programa para calcular la rentabilidad de la compra y venta de equipos electronicos"
+
+//se definen las variables
+
+equipos_compra <- 50
+precio_compra <- 150
+comision_compra <- 0.3
+equipos_venta <- 50
+precio_venta <- 170
+comision_venta <- 0.3
+
+//se calcula las variables a mostrar 
+
+monto_total_compra <- equipos_compra * precio_compra 
+monto_total_comision_compra <- monto_total_compra *comision_compra 
+monto_total_venta <- equipos_venta * precio_venta 
+monto_total_comision_venta <- monto_total_venta * precio_venta 
+gano_O_perdio_dinero <- monto_total_venta - monto_total_comision_venta - monto_total_compra  - monto_total_comision_compra 
+
